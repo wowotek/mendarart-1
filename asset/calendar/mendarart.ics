@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ical.marudot.com//iCal Event Maker
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Asia/Jakarta
+LAST-MODIFIED:20201011T015911Z
+TZURL:http://tzurl.org/zoneinfo-outlook/Asia/Jakarta
+X-LIC-LOCATION:Asia/Jakarta
+BEGIN:STANDARD
+TZNAME:WIB
+TZOFFSETFROM:+0700
+TZOFFSETTO:+0700
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20230301T001251Z
+UID:1677629259675-39465@ical.marudot.com
+DTSTART;TZID=Asia/Jakarta:20230304T100000
+DTEND;TZID=Asia/Jakarta:20230304T220000
+SUMMARY:MendarArt Day-1
+URL:mendarart.com
+DESCRIPTION:MendarArt di Bhumi Living Space supported by @dari.bhumi @umbra.id @streems.id @tamankota.id @rockesroll @biznethome\n\nhttps://goo.gl/maps/8heU55pjM2hn2Wvd7
+LOCATION:Bhumi Living Space : Jl. A. Yani No.94\, RT.01/RW.03\, Tanah Sareal\, Kec. Tanah Sereal\, Kota Bogor\, Jawa Barat 16161 . https://goo.gl/maps/8heU55pjM2hn2Wvd7
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:MendarArt Day-1
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230301T001251Z
+UID:1677629293260-76431@ical.marudot.com
+DTSTART;TZID=Asia/Jakarta:20230305T100000
+DTEND;TZID=Asia/Jakarta:20230305T220000
+SUMMARY:MendarArt Day-2
+URL:mendarart.com
+DESCRIPTION:MendarArt di Bhumi Living Space supported by @dari.bhumi @umbra.id @streems.id @tamankota.id @rockesroll @biznethome\n\nhttps://goo.gl/maps/8heU55pjM2hn2Wvd7
+LOCATION:Bhumi Living Space : Jl. A. Yani No.94\, RT.01/RW.03\, Tanah Sareal\, Kec. Tanah Sereal\, Kota Bogor\, Jawa Barat 16161 . https://goo.gl/maps/8heU55pjM2hn2Wvd7
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:MendarArt Day-2
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
