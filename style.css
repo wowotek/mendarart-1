@@ -39,7 +39,7 @@ html, body {
     width: 600px;
     margin: auto;
     margin-top: 10vh;
-    background-color: #234725;
+    background-color: rgba(34,72,37, 0.5);
 }
 
 .logo-showcase {
@@ -107,7 +107,7 @@ html, body {
 
 h1 {
     margin: 0;
-    margin-top: 80px;
+    margin-top: 150px;
     padding: 10px;
     padding-top: 15px;
     padding-left: 130px;
@@ -155,6 +155,7 @@ d {
     display: block;
     position: fixed !important;
     bottom: -5%;
+    z-index: -2000 !important;
 }
 
 .desktop-only {
