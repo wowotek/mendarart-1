@@ -270,15 +270,13 @@
 </body>
 
 <script defer>
-    $(window).on("load", function() {
+    setTimeout(() => {
+        window.scrollTo(0, 0)
+        document.getElementById("preloader").className = "preloader loaded";
         setTimeout(() => {
-            window.scrollTo(0, 0)
-            document.getElementById("preloader").className = "preloader loaded";
-            setTimeout(() => {
-                document.getElementById("preloader").remove();
-            }, 1000)
-        }, 1000)
-    });
+            document.getElementById("preloader").remove();
+        }, 5000)
+    }, 3000);
 </script>
 
 </html>

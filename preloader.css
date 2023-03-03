@@ -14,22 +14,22 @@
 }
 
 @keyframes loading {
-    000% { content: "............."; }
-    010% { content: "...L........."; }
-    015% { content: "...Lo........"; }
-    020% { content: "...Loa......."; }
-    030% { content: "...Loa......."; }
-    035% { content: "...Load......"; }
-    040% { content: "...Loadi....."; }
-    055% { content: "...Loadin...."; }
-    060% { content: "...Loading..."; }
-    070% { content: "....oading..."; }
-    075% { content: ".....ading..."; }
-    080% { content: "......ding..."; }
-    085% { content: ".......ing..."; }
-    090% { content: "........ng..."; }
-    095% { content: ".........g..."; }
-    100% { content: "............."; }
+    000% { content: "Kalo Agak Lama Mungkin ............. Internet Kamu, Hehe"; }
+    010% { content: "Kalo Agak Lama Mungkin ...L......... Internet Kamu, Hehe"; }
+    015% { content: "Kalo Agak Lama Mungkin ...Lo........ Internet Kamu, Hehe"; }
+    020% { content: "Kalo Agak Lama Mungkin ...Loa....... Internet Kamu, Hehe"; }
+    030% { content: "Kalo Agak Lama Mungkin ...Loa....... Internet Kamu, Hehe"; }
+    035% { content: "Kalo Agak Lama Mungkin ...Load...... Internet Kamu, Hehe"; }
+    040% { content: "Kalo Agak Lama Mungkin ...Loadi..... Internet Kamu, Hehe"; }
+    055% { content: "Kalo Agak Lama Mungkin ...Loadin.... Internet Kamu, Hehe"; }
+    060% { content: "Kalo Agak Lama Mungkin ...Loading... Internet Kamu, Hehe"; }
+    070% { content: "Kalo Agak Lama Mungkin ....oading... Internet Kamu, Hehe"; }
+    075% { content: "Kalo Agak Lama Mungkin .....ading... Internet Kamu, Hehe"; }
+    080% { content: "Kalo Agak Lama Mungkin ......ding... Internet Kamu, Hehe"; }
+    085% { content: "Kalo Agak Lama Mungkin .......ing... Internet Kamu, Hehe"; }
+    090% { content: "Kalo Agak Lama Mungkin ........ng... Internet Kamu, Hehe"; }
+    095% { content: "Kalo Agak Lama Mungkin .........g... Internet Kamu, Hehe"; }
+    100% { content: "Kalo Agak Lama Mungkin ............. Internet Kamu, Hehe"; }
 }
 
 .preloader-content {
