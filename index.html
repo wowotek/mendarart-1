@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preload" href="used-later.js" as="script">
     <link rel="preload" href="/asset/js/jquery-3.6.3.min.js" as="script">
     <link rel="preload" href="/asset/js/simpleParallax.js" as="script">
 
@@ -13,13 +12,18 @@
     <script src="/asset/js/jquery-3.6.3.min.js"></script>
     <script src="/asset/js/simpleParallax.js"></script>
     <script src="/asset/js/scripts.js" defer></script>
-
+    
+    <link rel="stylesheet" href="preloader.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mouse_scroll.css">
 </head>
 
-
 <body>
+    <div class="preloader" id="preloader">
+        <span class="preloader-content">
+        </span>
+    </div>
+
     <div class="page">
         <div class="parallax-layers" id="parallax-layers">
             <div class="parallax-layer-0" id="parallax-layer-0"></div>
@@ -264,4 +268,17 @@
         </div>
     </div>
 </body>
+
+<script defer>
+    $(window).on("load", function() {
+        setTimeout(() => {
+            window.scrollTo(0, 0)
+            document.getElementById("preloader").className = "preloader loaded";
+            setTimeout(() => {
+                document.getElementById("preloader").remove();
+            }, 1000)
+        }, 1000)
+    });
+</script>
+
 </html>

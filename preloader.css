@@ -1,0 +1,58 @@
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f2edb6;
+    z-index: 999999999999999;
+}
+
+.preloader-content::before {
+    content: "...Loading...";
+    animation: loading 5s linear infinite;
+}
+
+@keyframes loading {
+    000% { content: "............."; }
+    010% { content: "...L........."; }
+    015% { content: "...Lo........"; }
+    020% { content: "...Loa......."; }
+    030% { content: "...Loa......."; }
+    035% { content: "...Load......"; }
+    040% { content: "...Loadi....."; }
+    055% { content: "...Loadin...."; }
+    060% { content: "...Loading..."; }
+    070% { content: "....oading..."; }
+    075% { content: ".....ading..."; }
+    080% { content: "......ding..."; }
+    085% { content: ".......ing..."; }
+    090% { content: "........ng..."; }
+    095% { content: ".........g..."; }
+    100% { content: "............."; }
+}
+
+.preloader-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* background-color: black; */
+    z-index: 9999999999999991;
+    width: 100vw;
+    height: 10vh;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 50px;
+}
+
+@keyframes loaded {
+    000% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.loaded {
+    animation: loaded 1s ease-out;
+    opacity: 0;
+}
