@@ -1,132 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preload" href="used-later.js" as="script">
+    <link rel="preload" href="/asset/js/jquery-3.6.3.min.js" as="script">
+    <link rel="preload" href="/asset/js/simpleParallax.js" as="script">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/asset/style.css">
 
-    <script src="/asset/jslib/jquery-3.6.3.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
-    <script src="/asset/scripts/index.js" defer></script>
+    <script src="/asset/js/jquery-3.6.3.min.js"></script>
+    <script src="/asset/js/simpleParallax.js"></script>
+    <script src="/asset/js/scripts.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mouse_scroll.css">
 </head>
+
+
 <body>
-    <!-- Flyer -->
-    <section>
-
-    </section>
-    
-    <!-- About -->
-    <section>
-        <h2>What ? Why ?</h2>
-        <div class="sep">
-            <div class="sep-left"></div>
-            <div class="sep-star"></div>
-            <div class="sep-right"></div>
+    <div class="page">
+        <div class="parallax-layers" id="parallax-layers">
+            <div class="parallax-layer-0" id="parallax-layer-0"></div>
+            <div class="parallax-layer-1" id="parallax-layer-1"></div>
+            <div class="parallax-layer-2" id="parallax-layer-2"></div>
+            <div class="parallax-layer-3" id="parallax-layer-3"></div>
+            <div class="parallax-layer-4" id="parallax-layer-4"></div>
+            <div class="parallax-layer-5" id="parallax-layer-5"></div>
+            <div class="parallax-layer-6" id="parallax-layer-6"></div>
         </div>
+    </div>
 
-    </section>
-
-    <!-- Art Contributor -->
-    <section>
-        <h2>Art Contributor</h2>
-        <div class="sep">
-            <div class="sep-left"></div>
-            <div class="sep-star"></div>
-            <div class="sep-right"></div>
+    <div class="mouse_scroll" style="transform: scale(1.1);" id="mouse_scroll">
+        <div class="mouse">
+            <div class="wheel"></div>
         </div>
-
-    </section>
-
-    <!-- Music Performances -->
-    <section>
-        <h2>Music Performance</h2>
-        <div class="sep">
-            <div class="sep-left"></div>
-            <div class="sep-star"></div>
-            <div class="sep-right"></div>
+        <div>
+            <span class="m_scroll_arrows unu"></span>
+            <span class="m_scroll_arrows doi"></span>
+            <span class="m_scroll_arrows trei"></span>
         </div>
+    </div>
 
-    </section>
+    <div class="keep-scrolling">
+        <h2 style="color: #77acf1; font-size: 38px; text-shadow: 1px 1px black; -webkit-text-stroke: 1px #37407b; text-align: center;">
+            JANGAN BERENTI, GESER TERUUUUS
+            <br/><b style="font-size: 38px; font-family: Helvetica, Arial, sans-serif; text-shadow: 1px 1px black; -webkit-text-stroke: 1px #37407b;">V</b>
+            <br/><b style="font-size: 38px; font-family: Helvetica, Arial, sans-serif; text-shadow: 1px 1px black; -webkit-text-stroke: 1px #37407b;">V</b>
+            <br/><b style="font-size: 38px; font-family: Helvetica, Arial, sans-serif; text-shadow: 1px 1px black; -webkit-text-stroke: 1px #37407b;">V</b>
+        </h2>
+    </div>
 
-    <!-- Bazaree -->
-    <section>
-        <h2>Bazaaree</h2>
-        <div class="sep">
-            <div class="sep-left"></div>
-            <div class="sep-star"></div>
-            <div class="sep-right"></div>
-        </div>
+    <div class="page-content">
+        <section>   
+            <h1>About Us</h1>
+            <span><img class="section-accent" src="/asset/img/KV/eye.png"/></span>
+            <p>
+                <d>MendarArt</d> merupakan acara yang mewadahi para pelaku industri kreatif
+                di Bogor untuk menampilkan karya yang telah dihasilkan. Rangkaian
+                acara akan diisi dan diramaikan dengan pameran dari sejumlah produk dan
+                para pelaku usaha kreatif yang dapat dinikmati dan diperoleh oleh masyarakat
+                yang hadir sepanjang acara berlangsung.   
+            </p>
+        </section>
 
-    </section>
+        <section>
+            <h1>Spirit Of Movement</h1>
+            <span><img class="section-accent" src="/asset/img/KV/eye.png"/></span>
+            <p>
+                <d>Create | Collaborate</d> adalah spirit utama gerakan <d>MendarArt</d>.
+                Siapa pun yang memiliki karya kreatif dalam bentuk apapun, dapat berkolaborasi
+                bersama dengan gerakan ini tanpa pandang bulu dan tanpa syarat khusus apapun<sub style="font-size: 58px;">*</sub>.
+                <br><br>
+                <br><br>
+                <br><br>
+                <sub style="font-size: 58px;">*</sub> : <small>bintang iseng doang ini, beneran gak ada kok</small>
+            </p>
+        </section>
 
-    <!-- Supported By -->
-    <section>
-        <h2>Supporter</h2>
-        <div class="sep">
-            <div class="sep-left"></div>
-            <div class="sep-star"></div>
-            <div class="sep-right"></div>
-        </div>
+        <section>
+            <h1>Tentang Bab 1 - Perdana</h1>
+            <span><img class="section-accent" src="/asset/img/KV/eye.png"/></span>
+            <p>
+                <d>Pertama</d>-kali ini, secara ekslusif, kita membuat acara <d>MendarArt</d> secara KOLEKTIF, sebagai bentuk
+                solidaritas kami serta komunitas-komunitas yang sudah berkontribusi bahwa kami bisa
+                berkarya dengan tujuan utama KOLABORASI.
+                <br><br>
+                Acara Pertama ini berlangsung selama 2 hari, mulai dari jam 10 pagi hingga jam 10 malam.
+            </p>
+        </section>
 
-    </section>
+        <section>
+            <h1>Kontributor Kreatif</h1>
+            <span><img class="section-accent" src="/asset/img/KV/eye.png"/></span>
+            <p style="display: flex; flex-direction: unset; flex-wrap: wrap; justify-content: center; align-items: center;">
+                <span>
+                    Kumpulan orang, komunitas, organisasi Bogor yang keren
+                    banget sebagai kontributor exhibition yang punya karya
+                    keren keren. <br>
+                </span>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/agrimovie/"><img src="/asset/img/logos/artist/artis-agri-movie1.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/buttonetwork/"><img src="/asset/img/logos/artist/artis-button-network1.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/craftzillaaa/"><img src="/asset/img/logos/artist/artis-craftzilla-11.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/loudsonic/"><img src="/asset/img/logos/artist/artis-loudsonic1.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/mercvrryss/"><img src="/asset/img/logos/artist/artis-mercurys1.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/peluk_kiss/"><img src="/asset/img/logos/artist/artis-pelukiss1.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/viniatelier/"><img src="/asset/img/logos/artist/artis-vini-atelier1.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/balefilms"><img src="/asset/img/logos/artist/artis-bale_films.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/belingjadoel"><img src="/asset/img/logos/artist/artis-beling_jadoel.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/raincinema"><img src="/asset/img/logos/artist/artis-raincinema_pictures.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/rvlgn"><img src="/asset/img/logos/artist/artis-rvlgn.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/sebssineclub"><img src="/asset/img/logos/artist/artis-sebs.png"></a>
+            </p>
+        </section>
 
-    <!-- Media Partner -->
-    <section>
-        <h2>Media Partner</h2>
-        <div class="sep">
-            <div class="sep-left"></div>
-            <div class="sep-star"></div>
-            <div class="sep-right"></div>
-        </div>
+        <section>
+            <h1>Stan, Kios, Bazaar</h1>
+            <span><img class="section-accent" src="/asset/img/KV/eye.png"/></span>
+            <p style="display: flex; flex-direction: unset; flex-wrap: wrap; justify-content: center; align-items: center;">
+                <span>
+                    Semua yang udah dateng dan buka kios / booth sebagai
+                    tenant pemilik industri kreatif lokal Bogor yang keren banget. <br>
+                </span>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/komunitasorganikindonesia/"><img src="/asset/img/logos/bazaree/bazaree-koi.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/limatiga_shoecare/"><img src="/asset/img/logos/bazaree/bazaree-limatiga-1.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/photomaticsid/"><img src="/asset/img/logos/bazaree/bazaree-photomatics.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/smallbeads__/"><img src="/asset/img/logos/bazaree/bazaree-sbeads.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/small.temporarry/"><img src="/asset/img/logos/bazaree/bazaree-small-temporary.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/smokerhouse_bogor/"><img src="/asset/img/logos/bazaree/bazaree-smokerhouse1.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/tattoin.sini/"><img src="/asset/img/logos/bazaree/bazaree-tattoin-sin1.png"></a>
+            </p>
+        </section>
 
-        <div class="left-logo-paragraph">
+        <section>
+            <h1>Pendukung</h1>
+            <span><img class="section-accent" src="/asset/img/KV/eye.png"/></span>
+            <p style="display: flex; flex-direction: unset; flex-wrap: wrap; justify-content: center; align-items: center;">
+                <span>
+                    Mereka mereka yang udah gak tidur, gak makan, supaya buat
+                    acara ini yang tadinya gak ada, menjadi ada
+                    doain mereka panjang umur, banyak rejeki yahh... Amiiin...
+                </span>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/dari.bhumi/"><img src="/asset/img/logos/support/support-dari_bhumi.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/rockesroll/"><img src="/asset/img/logos/support/support-rockesroll.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/streems.id/"><img src="/asset/img/logos/support/support-streems.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/tamankota.id/"><img src="/asset/img/logos/support/support-tamankota.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/umbra.id/"><img src="/asset/img/logos/support/support-umbra.png"></a>
+            </p>
+        </section>
 
-        </div>
-    </section>
+        <section>
+            <h1>Dukungan Komunitas</h1>
+            <span><img class="section-accent" src="/asset/img/KV/eye.png"/></span>
+            <p style="display: flex; flex-direction: unset; flex-wrap: wrap; justify-content: center; align-items: center;">
+                <span>
+                    Komunitas yang udah ngeluangin waktu, dan tenaga untuk mendukung
+                    berjalannya acara <d>MendarArt</d>
+                </span>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/homeboyz/"><img src="/asset/img/logos/community/community-homeboyz.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/olahgayaclub/"><img src="/asset/img/logos/community/community-olahgaya.png"></a>
+            </p>
+        </section>
 
-    <!-- Support The Movement -->
-    <section>
-        <h2>Support The Spirit!</h2>
-        <div class="sep">
-            <div class="sep-left"></div>
-            <div class="sep-star"></div>
-            <div class="sep-right"></div>
-        </div>
+        <section>
+            <h1>Mitra Media</h1>
+            <span><img class="section-accent" src="/asset/img/KV/eye.png"/></span>
+            <p style="display: flex; flex-direction: unset; flex-wrap: wrap; justify-content: center; align-items: center;">
+                <span>
+                    Media media yang sangat berjasa banget ngebantu nge-promosiin karya, produk, dan semua ke
+                    banyak orang dan banyak sosial media. buat kalian yang sudah bisa baca
+                    website ini, berarti kalian datang dari salah satu media mereka<br>
+                </span>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/bogorpisan/"><img src="/asset/img/logos/medpar/medpar-bogor_pisan.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/infobogor/"><img src="/asset/img/logos/medpar/medpar-info_bogor.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/kisruhdotcom/"><img src="/asset/img/logos/medpar/medpar-kisruh.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/rebel.gigs/"><img src="/asset/img/logos/medpar/medpar-rebel_musik.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/rockinraindotcom/"><img src="/asset/img/logos/medpar/medpar-rockinrain.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/rripro2bogor/"><img src="/asset/img/logos/medpar/medpar-rripro21.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/tribunbogor/"><img src="/asset/img/logos/medpar/medpar-tribun.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/txtfrombogor/"><img src="/asset/img/logos/medpar/medpar-txt_bogor.png"></a>
+            </p>
+        </section>
+
+        <section>
+            <h1>Pertunjukan Musik</h1>
+            <span><img class="section-accent" src="/asset/img/KV/eye.png"/></span>
+            <p style="display: flex; flex-direction: unset; flex-wrap: wrap; justify-content: center; align-items: center;">
+                <span>
+                    Buka Mata, Hati, dan Telinga kalian buat dengerin semua lini genre musik. jangan takut buat eksplor yah.
+                    Musik mereka keren bangeeeeet! Sekalian Jadwal mereka main nih... dateng loh yaaa! <br>
+                </span>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/hadsonlity/"><img src="/asset/img/logos/band/band-hadson1.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/hear.rock/"><img src="/asset/img/logos/band/band-hear1.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href=""><img src="/asset/img/logos/band/band-iluasi1.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/krackdeath/"><img src="/asset/img/logos/band/band-krack1.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/krakenofficial.music/"><img src="/asset/img/logos/band/band-kraken1.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/shroomeaterofficial/"><img src="/asset/img/logos/band/band-shroomeater1.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/vikriandmymagicfriend/"><img src="/asset/img/logos/band/band-vmf-2png1.png"></a>
+                <a class="logo-showcase" rel="noopener noreffer" target="_blank" href="https://www.instagram.com/thevuur_official/"><img src="/asset/img/logos/band/band-thevuur.png"></a>
+            </p>
+        </section>
+
+        <section>
+            <h1>Mau Koleb ? Yuks...</h1>
+            <span><img class="section-accent" src="/asset/img/KV/eye.png"/></span>
+            <p>
+                Made By People : <br>
+                - IG: <a rel="noopener noreffer" target="_blank" style="padding-left: 20px; color: #f2edb6; text-shadow: 1px 1px black; -webkit-text-stroke: 1px black;" href="https://www.instagram.com/madebypeople.id/">@madebypeople.id</a><br>
+                <br><br>
+                UMBRA : <br>
+                - IG: <a rel="noopener noreffer" target="_blank" style="padding-left: 20px; color: #f2edb6; text-shadow: 1px 1px black; -webkit-text-stroke: 1px black;" href="https://www.instagram.com/umbra.id/">@umbra.id</a><br>
+                - WA: <a rel="noopener noreffer" target="_blank" style="padding-left: 20px; color: #f2edb6; text-shadow: 1px 1px black; -webkit-text-stroke: 1px black;" href="https://wa.me/+6285930304000/">+62 859 3030 4000</a><br>
+            </p>
+        </section>
+
+        <section>
+            <h1>Video-video lucuuuu</h1>
+            <span><img class="section-accent" src="/asset/img/KV/eye.png"/></span>
+            <p>
+                Nanti yaaah... belom rilis
+            </p>
+        </section>
+
+        <section>
+            <h1>Foto yang bagus bagus</h1>
+            <span><img class="section-accent" src="/asset/img/KV/eye.png"/></span>
+            <p>
+                Nanti yaaah... belom rilis
+            </p>
+        </section>
+
+    </div>
+
+    <div class="desktop-only">
+        <img class="bg" src="/asset/img/KV/beside hand1.png" style="width: 17vw; left: 0">
+        <img class="bg" src="/asset/img/KV/beside hand2.png" style="width: 17vw; right: 0">
         
-        <add-to-calendar-button
-            name="MendarArt Day-1"
-            description="MendarArt di Bhumi Living Space supported by @dari.bhumi @umbra.id @streems.id @tamankota.id @rockesroll @biznethome · https://goo.gl/maps/8heU55pjM2hn2Wvd7"
-            startDate="2023-03-04"
-            startTime="10:00"
-            endDate="2023-03-04"
-            endTime="22:00"
-            timeZone="Asia/Bangkok"
-            location="Bhumi Living Space : Jl. A. Yani No.94, RT.01/RW.03, Tanah Sareal, Kec. Tanah Sereal, Kota Bogor, Jawa Barat 16161 · https://goo.gl/maps/8heU55pjM2hn2Wvd7"
-            availability="free"
-            listStyle="overlay"
-            buttonStyle="3d"
-            trigger="click"
-            hideBackground
-            hideCheckmark
-            size="1"
-            label="Ingatkan Saya!"
-            lightMode="bodyScheme"
-            options="'Apple','Google','iCal','Outlook.com'"
-        ></add-to-calendar-button>
-    </section>
+        <img class="bg" src="/asset/img/KV/tentacel infarme left.png"   style="width: 10vw; left:  0%; top: -2%; transform: rotate(15deg);">
+        <img class="bg" src="/asset/img/KV/tentacel infarme right.png"  style="width: 10vw; right: 0%; top: -2%; transform: rotate(-15deg);">
 
-    <!-- Comments -->
-    <section id="section-comments">
-        <h2>Your Lovely Feedbacks :</h2>
-        <div class="sep">
-            <div class="sep-left"></div>
-            <div class="sep-star"></div>
-            <div class="sep-right"></div>
+        <img class="bg" src="/asset/img/KV/bungan kiri atas.png"  style="width: 10vw; left: 2%; top: 2%">
+        <img class="bg" src="/asset/img/KV/bunga kanan atas.png"  style="width: 10vw; right: 2%; top: 2%">
+        <img class="bg" src="/asset/img/KV/bunga kiri bawah.png"  style="width: 10vw; left: 2%; bottom: 2%">
+        <img class="bg" src="/asset/img/KV/bunga kanan bawah.png" style="width: 10vw; right: 2%; bottom: 2%">
+    </div>
+
+    <div class="sticky-overlay">
+        <div class="sticky-content">
+            <img src="/asset/img/KV/Mendarart.png">
         </div>
-
-        <div id="comment-container"></div>
-    </section>
+    </div>
 </body>
 </html>
