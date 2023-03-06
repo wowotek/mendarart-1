@@ -53,6 +53,6 @@
 }
 
 .loaded {
-    animation: loaded 1s ease-out;
+    animation: loaded 0.25s ease-out;
     opacity: 0;
 }
