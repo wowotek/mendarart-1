@@ -346,12 +346,10 @@
 <script defer>
     $(window).on("load", () => {
         window.scrollTo(0, 0)
+        document.getElementById("preloader").className = "preloader loaded";
         setTimeout(() => {
-            document.getElementById("preloader").className = "preloader loaded";
-            setTimeout(() => {
-                document.getElementById("preloader").remove()
-            }, 1000)
-        }, 100);
+            document.getElementById("preloader").remove()
+        }, 1000);
     });
 </script>
 
