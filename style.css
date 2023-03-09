@@ -154,10 +154,6 @@ d {
     text-shadow: 0px 4px black;
 }
 
-gallery {
-    
-}
-
 .bg { 
     transition: 100ms;   
     display: block;
@@ -270,7 +266,7 @@ a {
     }
 
     .desktop-only {
-        display: none
+        display: none;
     }
 
     .keep-scrolling {
@@ -292,3 +288,78 @@ a {
         padding-left: 15px;
     }
 }
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.selected {
+    animation: selected_anim 0.3s ease-out;
+}
+
+#img_preview {
+    animation: preview_anim 0.3s ease-out;
+}
+
+@keyframes preview_anim {
+    0% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, 0.5)
+    }
+}
+
+#img_preview_preview {
+    padding: 5px;
+    width: 100%; 
+    object-fit: contain;
+    overflow: hidden;
+}
+
+@keyframes selected_anim {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes img_go_in {
+    0% {
+        opacity: 0.0;
+        transform: scale(0.3) translate(0, -10000%);
+    }
+    
+    7% {
+        opacity: 0.0;
+        transform: scale(0.3) translate(0, -10000%);
+    }
+
+    20% {
+        opacity: 0.4;
+        transform: scale(0.3) translate(0, -700%);
+    }
+
+    60% {
+        transform: scale(0.5) translate(0, 50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translate(0, 0);
+    }
+}
+
+.img_preview_go_in {
+    animation: img_go_in 0.5s ease-out;
+}
+

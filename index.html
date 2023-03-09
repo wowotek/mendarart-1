@@ -86,18 +86,12 @@
     <script src="/asset/js/jquery-3.6.3.min.js"></script>
     <script src="/asset/js/simpleParallax.js"></script>
     <script src="/asset/js/scripts.js" defer></script>
-    
-    <link rel="stylesheet" href="preloader.css">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mouse_scroll.css">
 </head>
 
 <body>
-    <div class="preloader" id="preloader">
-        <span class="preloader-content">
-        </span>
-    </div>
-
     <div class="page">
         <div class="parallax-layers" id="parallax-layers">
             <div class="parallax-layer-0" id="parallax-layer-0"></div>
@@ -308,16 +302,11 @@
         <section>
             <h1>Foto yang bagus bagus</h1>
             <span><img class="section-accent" src="/asset/img/KV/bungan kiri atas.png"/></span>
-            <p>
-                Nanti yaaah... belom rilis
+            <p style="display: flex; flex-wrap: wrap; align-items: center; align-content: flex-start; justify-content: center; max-height: 57vh;" id="photo_gallery">
+                
             </p>
         </section>
-
     </div>
-
-    <footer>
-        Humbly Designed, Written, and Deployed by: <a rel="noopener noreffer" target="_blank" href="https://www.instagram.com/umbra.id/">@umbra.id</a>
-    </footer>
 
     <div class="desktop-only">
         <img class="bg" src="/asset/img/KV/beside hand1.png" style="width: 17vw; left: 0">
@@ -349,16 +338,161 @@
             <img src="/asset/img/KV/Mendarart.png">
         </div>
     </div>
+
+    <footer style="position: static; bottom: 0">
+        Humbly Designed, Written, and Deployed by: <a rel="noopener noreffer" target="_blank" href="https://www.instagram.com/umbra.id/">@umbra.id</a>
+    </footer>
+
+    <button class="hidden" id="img_preview" onclick="hidePreview()" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 5; background-color: rgba(0, 0, 0, 0.5); border: 0; overflow: hidden">
+        <img id="img_preview_preview" src="">
+    </button>
 </body>
 
 <script defer>
+    // window.scrollTo(0, 0);
     $(window).on("load", () => {
-        window.scrollTo(0, 0)
-        document.getElementById("preloader").className = "preloader loaded";
         setTimeout(() => {
-            document.getElementById("preloader").remove()
-        }, 300);
+            // window.scrollTo(0, 0);
+        }, 200)
+        setTimeout(() => {
+            const img_data = [
+                "/asset/img/photos/day1-001.jpg",
+                "/asset/img/photos/day1-002.jpg",
+                "/asset/img/photos/day1-003.jpg",
+                "/asset/img/photos/day1-004.jpg",
+                "/asset/img/photos/day1-005.jpg",
+                "/asset/img/photos/day1-006.jpg",
+                "/asset/img/photos/day1-007.jpg",
+                "/asset/img/photos/day1-008.jpg",
+                "/asset/img/photos/day1-009.jpg",
+                "/asset/img/photos/day1-010.jpg",
+                "/asset/img/photos/day1-011.jpg",
+                "/asset/img/photos/day1-012.jpg",
+                "/asset/img/photos/day1-013.jpg",
+                "/asset/img/photos/day1-014.jpg",
+                "/asset/img/photos/day1-015.jpg",
+                "/asset/img/photos/day1-016.jpg",
+                "/asset/img/photos/day1-017.jpg",
+                "/asset/img/photos/day1-018.jpg",
+                "/asset/img/photos/day1-019.jpg",
+                "/asset/img/photos/day1-020.jpg",
+                "/asset/img/photos/day1-021.jpg",
+                "/asset/img/photos/day1-022.jpg",
+                "/asset/img/photos/day1-023.jpg",
+                "/asset/img/photos/day1-024.jpg",
+                "/asset/img/photos/day1-025.jpg",
+                "/asset/img/photos/day1-026.jpg",
+                "/asset/img/photos/day1-027.jpg",
+                "/asset/img/photos/day1-028.jpg",
+                "/asset/img/photos/day1-029.jpg",
+                "/asset/img/photos/day1-030.jpg",
+                "/asset/img/photos/day1-031.jpg",
+                "/asset/img/photos/day1-032.jpg",
+                "/asset/img/photos/day1-033.jpg",
+                "/asset/img/photos/day1-034.jpg",
+                "/asset/img/photos/day1-035.jpg",
+                "/asset/img/photos/day1-036.jpg",
+                "/asset/img/photos/day1-037.jpg",
+                "/asset/img/photos/day1-038.jpg",
+                "/asset/img/photos/day1-039.jpg",
+                "/asset/img/photos/day1-040.jpg",
+                "/asset/img/photos/day1-041.jpg",
+                "/asset/img/photos/day1-042.jpg",
+                "/asset/img/photos/day1-043.jpg",
+                "/asset/img/photos/day1-044.jpg",
+                "/asset/img/photos/day1-045.jpg",
+                "/asset/img/photos/day1-046.jpg",
+                "/asset/img/photos/day1-047.jpg",
+                "/asset/img/photos/day1-048.jpg",
+                "/asset/img/photos/day1-049.jpg",
+                "/asset/img/photos/day1-050.jpg",
+                "/asset/img/photos/day1-051.jpg",
+                "/asset/img/photos/day1-052.jpg",
+                "/asset/img/photos/day1-053.jpg",
+                "/asset/img/photos/day1-054.jpg",
+                "/asset/img/photos/day1-055.jpg",
+                "/asset/img/photos/day1-056.jpg",
+                "/asset/img/photos/day1-057.jpg",
+                "/asset/img/photos/day1-058.jpg",
+                "/asset/img/photos/day1-059.jpg",
+                "/asset/img/photos/day1-060.jpg",
+                "/asset/img/photos/day1-061.jpg",
+                "/asset/img/photos/day2-001.jpg",
+                "/asset/img/photos/day2-002.jpg",
+                "/asset/img/photos/day2-003.jpg",
+                "/asset/img/photos/day2-004.jpg",
+                "/asset/img/photos/day2-005.jpg",
+                "/asset/img/photos/day2-006.jpg",
+                "/asset/img/photos/day2-007.jpg",
+                "/asset/img/photos/day2-008.jpg",
+                "/asset/img/photos/day2-009.jpg",
+                "/asset/img/photos/day2-010.jpg",
+                "/asset/img/photos/day2-011.jpg",
+                "/asset/img/photos/day2-012.jpg",
+                "/asset/img/photos/day2-013.jpg",
+                "/asset/img/photos/day2-014.jpg",
+                "/asset/img/photos/day2-015.jpg",
+                "/asset/img/photos/day2-016.jpg",
+                "/asset/img/photos/day2-017.jpg",
+                "/asset/img/photos/day2-018.jpg",
+                "/asset/img/photos/day2-019.jpg",
+                "/asset/img/photos/day2-020.jpg",
+                "/asset/img/photos/day2-021.jpg",
+                "/asset/img/photos/day2-022.jpg",
+                "/asset/img/photos/day2-023.jpg",
+                "/asset/img/photos/day2-024.jpg",
+                "/asset/img/photos/day2-025.jpg",
+                "/asset/img/photos/day2-026.jpg",
+                "/asset/img/photos/day2-027.jpg",
+                "/asset/img/photos/day2-028.jpg",
+                "/asset/img/photos/day2-029.jpg",
+                "/asset/img/photos/day2-030.jpg",
+                "/asset/img/photos/day2-031.jpg",
+                "/asset/img/photos/day2-032.jpg",
+                "/asset/img/photos/day2-033.jpg",
+                "/asset/img/photos/day2-034.jpg",
+                "/asset/img/photos/day2-035.jpg",
+                "/asset/img/photos/day2-036.jpg",
+                "/asset/img/photos/day2-037.jpg",
+                "/asset/img/photos/day2-038.jpg",
+                "/asset/img/photos/day2-039.jpg",
+                "/asset/img/photos/day2-040.jpg",
+                "/asset/img/photos/day2-041.jpg",
+                "/asset/img/photos/day2-042.jpg",
+                "/asset/img/photos/day2-043.jpg",
+                "/asset/img/photos/day2-044.jpg",
+                "/asset/img/photos/day2-045.jpg",
+                "/asset/img/photos/day2-046.jpg",
+                "/asset/img/photos/day2-047.jpg"
+            ];
+
+            let count = 0;
+            for(let i of img_data) {
+                document.getElementById("photo_gallery").innerHTML += `
+                    <button onclick="showPreview(${count})" style="padding: 0; margin: 5px; overflow: hidden; background-color: rgba(0, 0, 0, 0); border: 0">
+                        <img id="gallery_${count}" src="${i}" style="height: 120px; object-fit: contain; margin-bottom: -5px; overflow: hidden">
+                    </button>
+                `;
+                count++;
+            }
+        }, 1000)
     });
+
+    function showPreview(img_id) {
+        gallery = document.getElementById(`gallery_${img_id}`);
+        gallery.classList = "selected";
+        setTimeout(() => { gallery.classList = "" }, 400);
+        document.getElementById("img_preview_preview").src = gallery.src;
+        document.getElementById("img_preview_preview").classList = "img_preview_go_in";
+        setTimeout(() => {
+            document.getElementById("img_preview_preview").classList = "";
+        }, 550);
+        document.getElementById("img_preview").classList = "";
+    }
+
+    function hidePreview() {
+        document.getElementById("img_preview").classList = "hidden";
+    }
 </script>
 
 </html>
