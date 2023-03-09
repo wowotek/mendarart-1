@@ -29,7 +29,6 @@ html, body {
     font-family:Helvetica,Sans-serif;
     overflow-x: hidden;
     overflow-y: auto;
-    padding-bottom: 100rem;
 }
 
 .page {
@@ -137,18 +136,26 @@ h1 {
     filter: drop-shadow(1px 1px 2px black);
 }
 
-p {
+p, p * {
     color: #f2edb6;
-    font-size: 28px;
+    font-family: Helvetica;
+    font-size: 22px;
     text-shadow: 1px 1px black;
-    -webkit-text-stroke: 1px black;
+    /* -webkit-text-stroke: 1px black; */
     text-align: justify;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 d {
+    font-family: "Chubby";
     color: #3e80ea;
-    font-size: 44px;
+    font-size: 32px;
     text-shadow: 0px 4px black;
+}
+
+gallery {
+    
 }
 
 .bg { 
@@ -194,6 +201,21 @@ d {
     width: 100%;
     object-fit: contain;
     margin: auto;
+}
+
+footer {
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    color: white;
+    font-family: helvetica;
+    font-size: 11px;
+}
+
+a {
+    color: white;
+    font-family: helvetica;
+    font-size: 11px;
 }
 
 @media only screen and (max-width: 770px) {
